@@ -10,7 +10,7 @@ const refs = {
     minutes: document.querySelector('[data-minutes]'),
     seconds: document.querySelector('[data-seconds]'),
 }
-
+let intervalId = null
 refs.startBtn.disabled = true
 
 flatpickr(refs.input, {
